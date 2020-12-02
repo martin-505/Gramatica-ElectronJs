@@ -1,0 +1,25 @@
+{
+    "name": "practicaGramatica",
+    "version": "1.0.0",
+    "description": "Finales Gratatica",
+    "main": "./main.js",
+    "scripts": {
+
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "author": "elMartinChido",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^10.1.5",
+        "electron-builder": "^22.9.1"
+    },
+    "build": {
+        "appId": "com.practicaPilaGramatica.afp",
+        "win": {
+            "target": "nsis",
+            "icon": "build/icon.ico"
+        }
+    }
+}
